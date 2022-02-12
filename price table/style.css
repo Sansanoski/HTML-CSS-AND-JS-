@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    background:linear-gradient(rgba(2,2,2,0.4),rgba(2,2,2,0.6));
+    text-align: center;
+}
+.container-all{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-all .div-info{
+   height: 60%;
+   width: 20%;
+   background-color: #555;
+   border-radius: 10px;
+   position: relative;
+   box-shadow: #222 2px 2px 2px;
+}
+.container-all .div-info:hover{
+    box-shadow: none;
+}
+h1{
+    font-family: sans-serif;
+    position: absolute;
+    top: 40px;
+    font-size: 50px;
+    color: rgba(2,2,2,0.7);
+}
+.div-info h2 {
+    color: #fff;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+.div-info .premiun {
+    color: gold;
+}
+.div-info .price {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.div-info .price h3 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.div-info .price p {
+    font-family: sans-serif;
+}
+.div-benefits{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: start;
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+}
+li::before{
+    content:'';
+    display: inline-block;
+    position: absolute;
+    background-color:red;
+    margin-right: auto;
+    height: 5px;
+    width: 5px;
+    border-radius:100%;
+    right: 100%;
+}
+.div-info .div-benefits li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+button{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 40%;
+    height: 7%;
+    outline: none;
+    background: transparent;
+    border:red solid 1px;
+    color: #fff;
+    font-family: sans-serif;
+}
+button:hover{
+    background-color: red;
+}
+h3::after{
+    content:'';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
