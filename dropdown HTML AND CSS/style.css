@@ -1,0 +1,43 @@
+section{
+    background-color: #ff4321;
+    height: 40px;
+}
+section .menu {
+    width: 100%;
+    height: 290px;
+    display: flex;
+   
+}
+section .menu ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0px;
+    
+}
+.menu .top-menu {
+    width: 200px;
+    text-align: center;
+    transition: 2s;
+}
+.menu .top-menu:hover .ul-menu {
+    display: block;
+    background-color: #ff4321;
+}
+.top-menu .ul-menu{
+    display: block;
+    position: relative;
+    right:19;
+    list-style: none;
+    padding: 0;
+    display: none;
+    top: 5px;
+}
+.top-menu .ul-menu .lili {
+    padding: 10px 0px;
+    border: solid 1px black;
+}
+.top-menu .ul-menu .lili:hover {
+    color: white;
+}
