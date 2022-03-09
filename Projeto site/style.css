@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 1rem;
+}
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+
+}
+
+ #header_1 {
+     font-size: 4.5rem;
+     display: flex;
+     border-bottom: solid 1px #e4e4e4;
+     margin-bottom: 1rem;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 6rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+ #iconMenuheader {
+     font-size:25px;
+ }
+ 
+.texto_0 {
+    font-size: 2rem;
+    color: #6c757d;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* aqui e para modificar depois  NAVEGATION */
+nav p  {
+    font-size: 1.55rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#home .texto_1 {
+    text-align: center;
+}
+#home .texto_1 h1 {
+    font-size: min(100px, 10vw);
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+}
+#home .texto_1 p {
+    font-size: min(25px, 5vw);
+    padding-left: 5px;
+    padding-right:5px ;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 2rem;
+}
+#home .texto_1  a {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 100px;
+    color: #fcbf49;
+    font-size: 1rem;
+}
+
