@@ -14,8 +14,16 @@
         <div class="texto_0">
             <p> Gold Salon. </p>
         </div>
-        <nav>
-            <i id="iconMenuheader" class="fa-solid fa-bars"></i>
+        <nav class="navegacao_header">
+            <i id="iconOpenMenuheader" onclick="openMenu()  "class="fa-solid fa-bars"></i>
+            <i  id="iconCloseMenuHeader" onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+            <ul class="ul_items" id="ulMenu" >
+                <li><a onclick="openAndClose()" href="#home">HOME</a></li>
+                <li><a onclick="openAndClose()" href="#sobre">SOBRE</a></li>
+                <li><a onclick="openAndClose()" href="#servico">SERVICOS</a></li>
+                <li><a onclick="openAndClose()" href="#sugestao">SUGESTAO</a></li>
+                <li><a onclick="openAndClose()" href="#contato">CONTATO</a></li>
+            </ul>
         </nav>
 
     </header>
@@ -29,11 +37,85 @@
             <div class="texto_1">
                 <h1> Excelencia em saude natural para os cabelos</h1>
                 <p>Um salao exclusivo em Santos, especializado em tratamentos naturais.</p>
-                <a href="#"> <p>Agende um Horario</p> </a>
+                <p><a href="#">Agende um Horario</a></p>
             </div>
+        </section>
+        <section id="sobre">
+            <div class="img-sobre">
+                <img src="https://images.unsplash.com/photo-1614438865362-9137f7e3036e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNhbG9uJTIwaGFpcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="texto-sobre">
+                <h2>Sobre Nos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem nulla consequuntur modi commodi molestias ducimus facilis atque temporibus iure ex, quisquam libero delectus voluptas? Dignissimos itaque facere perferendis dicta, alias ipsum est consequuntur deleniti, sapiente dolor ducimus similique! Facere, odit doloribus voluptas cupiditate possimus labore nisi corporis eligendi culpa eveniet.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, expedita, voluptas et similique alias asperiores recusandae in doloremque beatae voluptates facilis id minima, tempora provident veritatis sunt doloribus numquam eligendi?</p>
+            </div>
+        </section>
+
+
+    
+        <section id="servico">
+            <div class="texto_servico">
+                <h2> Nossos Servicos </h2>
+            </div>
+            <div class="container-servicos">
+                <div class="img-servicos">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2Fsb24lMjBoYWlyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Cabelereira fazendo o cabelo da cliente">
+                    <h3>Cabeleireiro - Hair Stylist</h3>
+                    <p>Corte, mechas, luzes, técnicas de alisamento e coloração: Oferecemos a orientação necessária para resultados surpreendentes para cada perfil</p>
+                    <p><a href="#"> Agendar</a></p>
+                </div>
+                <div class="img-servicos">
+                    <img src="https://media.istockphoto.com/photos/closeup-of-hairstylists-hands-cutting-strand-of-mans-hair-picture-id915640558?b=1&k=20&m=915640558&s=170667a&w=0&h=zanbdPPcQ0pNwYEzW67zj644JZa4ZsbgFrvTt_saw3k=">
+                    <h3>Barbearia</h3>
+                    <p>Conforto e privacidade para o público masculino em um ambiente estilizado e de bom gosto para a realização de corte, tratamento facial e barba.</p>
+                    <p><a href="#"> Agendar</a></p>
+                </div>
+                <div class="img-servicos">
+                    <img src="https://images.pexels.com/photos/5128222/pexels-photo-5128222.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <h3>Sobrancelha</h3>
+                    <p>Sobrancelhas bem feitas fazem toda diferença na harmonia da beleza natural. Nossa equipe é especialista em visagismo e realiza os procedimentos de Coloração e Depilação egípcia (método com linha), assim como Permanente e Tingimento de cílios.</p>
+                    <p><a href="#"> Agendar</a></p>
+                </div>
+                <div class="img-servicos">
+                    <img src="https://images.unsplash.com/photo-1645477120165-a9f27bcb19d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1ha2V1cCUyMHNhbG9ufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                    <h3>Maquiagem Profissional</h3>
+                    <p>Realizamos maquiagens para o dia a dia e ocasiões especiais, disponibilizando procedimentos como permanente e alongamento de cílios, design de sobrancelhas, maquiagem com a técnica de air brush, sempre seguindo as últimas tendências.</p>
+                    <p><a href="#"> Agendar</a></p>
+                </div>
+                <div class="img-servicos">
+                    <img src="http://theonesalon.com.br/wp-content/uploads/2018/08/noiva-e1535395539931.png">
+                    <h3>Dia da noiva</h3>
+                    <p>A noiva recebe todas as atenções com extrema dedicação. Programas carinhosamente preparados para sua escolha, executados no dia ou com antecedência, com uma estrutura completa para a noiva e para a família nessa ocasião tão especial.</p>
+                    <p><a href="#"> Agendar</a></p>
+                </div>
+            </div>
+        </section>
+        <section id="sugestao">
+            <div class="container-sugestao">
+                <div class="texto-sugestao">
+                    <h3>Preencha o formulário <br>para enviar sugestões,<br> elogios ou <br> solicitar orçamento.</h3>
+                </div>
+                <div class="formulario">
+                    <form action="#">
+                        <input id="nome"type="text" name="nome" placeholder="Nome">
+                        <input id="email"type="email" name="e-mail" placeholder="E-mail">
+                        <input id="assunto"type="text" name="assunto" placeholder="Assunto">
+                        <textarea name="menssagem" id="" cols="20" rows="10" placeholder="Menssage" ></textarea>
+                        <button id="btn-form"type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+        <section id="contato">
+
         </section>
     </main>
 
+
+
+
+    <script src="index.js"></script>
 
 </body>
 </html>

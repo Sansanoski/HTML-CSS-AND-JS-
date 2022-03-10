@@ -16,6 +16,7 @@ img{
 
 }
 
+
  #header_1 {
      font-size: 4.5rem;
      display: flex;
@@ -24,15 +25,70 @@ img{
      justify-content: space-between;
      align-items: center;
      margin-bottom: 6rem;
+     position: relative;
 }
-nav{
+#header_1 .ul_items{
+  display: block;
+  font-size:20px;
+}
+.navegacao_header{
     display: flex;
-    align-items: center;
+    align-items:center;
+
 }
- #iconMenuheader {
+/* parte do  navegacao do menu header */
+.navegacao_header .ul_items {
+    background-color: #f8edeb;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    text-align: center;
+    display: block;
+}
+.navegacao_header .ul_items li {
+    padding: 40px 0px;
+  
+}
+.navegacao_header .ul_items li a {
+    font-family: 'Poppins', sans-serif;
+    color: #6c757d;
+}
+.navegacao_header .ul_items li a::after{
+    content: '';
+    width: 0%;
+    height: 2px ;
+    display: block;
+    background-color: #6c757d;
+    transition: width  .1s ease-in;
+    position: absolute ;
+    margin: 0  auto ;
+    right: 0;
+    left: 0 ;
+}
+.navegacao_header .ul_items li a:hover::after{
+    color: black;
+    width: 20%;
+    margin-top: 20px;
+    
+}
+
+
+ #iconOpenMenuheader {
      font-size:25px;
  }
  
+#iconCloseMenuHeader{
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+    font-size:25px;
+    display: block;
+    cursor: pointer;
+}
+
 .texto_0 {
     font-size: 2rem;
     color: #6c757d;
@@ -40,7 +96,7 @@ nav{
 }
 
 /* aqui e para modificar depois  NAVEGATION */
-nav p  {
+.navegacao_header p  {
     font-size: 1.55rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -59,15 +115,116 @@ nav p  {
     padding-left: 5px;
     padding-right:5px ;
     font-family: 'Poppins', sans-serif;
-    position: relative;
+    color: rgba(0,0,0,.4);
     top: 2rem;
 }
-#home .texto_1  a {
+#home .texto_1  p a {
     font-family: 'Poppins', sans-serif;
-    padding: 5px;
     cursor: pointer;
     margin-bottom: 100px;
     color: #fcbf49;
     font-size: 1rem;
 }
 
+
+
+/* section sobre -------*/
+
+#sobre {
+    padding: 40px 0px ; 
+}
+#sobre .texto-sobre {
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:  1px solid rgba(0,0,0,.4);
+}
+#sobre .texto-sobre h2 {
+    padding: 10px 0px;
+    font-size: min(80px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#sobre .texto-sobre p {
+    font-size: min(25px, 5vw);
+     margin-bottom: 40px;
+     font-family: 'Poppins', sans-serif;
+}
+
+/* --------------sessao  servicos ---------*/
+#servico .texto_servico h2{
+    padding: 10px 0px;
+    font-size: min(80px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+
+#servico .container-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+#servico .container-servicos .img-servicos {
+    border-bottom:  1px solid rgba(0,0,0,.4);
+  
+}
+#servico .container-servicos .img-servicos h3  {
+    padding: 10px 0px;
+    font-size: min(40px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#servico .container-servicos .img-servicos p {
+    font-size: min(25px, 5vw);
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+#servico .container-servicos .img-servicos a {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-bottom: 100px;
+    color: #fcbf49;
+    font-size: 1rem;
+}
+#servico .container-servicos .img-servicos img{
+    width: 100%;
+}
+
+
+/*------------ section sugestao --------------*/
+
+#sugestao{
+    padding: 40px 0px ; 
+}
+
+#sugestao .container-sugestao {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sugestao .container-sugestao .texto-sugestao {
+    padding: 10px 0px;
+    font-size: min(20px, 5vw);
+    font-family: 'Poppins', sans-serif;
+    width:400px;
+}
+#sugestao .container-sugestao .formulario{
+    width: 400px;
+}
+#btn-form{
+    width: 100% ;
+}
+#sugestao .container-sugestao .formulario form {
+    display: flex;
+    flex-direction: column;
+}
+#sugestao .container-sugestao .formulario form ,input ,
+ textarea {
+    width: 100%;
+    resize: none;
+}
+#nome {
+    width: 50%;
+}
+#email {
+    width: 50%;
+}
+::placeholder {
+    padding: 5px 0px;
+    font-size: min(15px, 8vw);
+}
