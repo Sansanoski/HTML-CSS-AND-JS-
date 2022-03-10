@@ -11,20 +11,21 @@
 <body>
 
     <header id="header_1">
-        <div class="texto_0">
-            <p> Gold Salon. </p>
-        </div>
         <nav class="navegacao_header">
-            <i id="iconOpenMenuheader" onclick="openMenu()  "class="fa-solid fa-bars"></i>
-            <i  id="iconCloseMenuHeader" onclick="closeMenu()" class="fa-solid fa-xmark"></i>
-            <ul class="ul_items" id="ulMenu" >
-                <li><a onclick="openAndClose()" href="#home">HOME</a></li>
-                <li><a onclick="openAndClose()" href="#sobre">SOBRE</a></li>
-                <li><a onclick="openAndClose()" href="#servico">SERVICOS</a></li>
-                <li><a onclick="openAndClose()" href="#sugestao">SUGESTAO</a></li>
-                <li><a onclick="openAndClose()" href="#localizacao">LOCALIZACAO</a></li>
-                <li><a onclick="openAndClose()" href="#contato">CONTATO</a></li>
-            </ul>
+            <h1 class="logo">Gold <span>Star</span> Salon</h1>
+            <div class="menus-header">
+                <i id="iconOpenMenuheader" onclick="openMenu()  "class="fa-solid fa-bars"></i>
+                <i  id="iconCloseMenuHeader" onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                <ul class="ul_items" id="ulMenu" >
+                    <li><a onclick="openAndClose()" href="#home">HOME</a></li>
+                    <li><a onclick="openAndClose()" href="#sobre">SOBRE</a></li>
+                    <li><a onclick="openAndClose()" href="#servico">SERVICOS</a></li>
+                     <li><a onclick="openAndClose()" href="#sugestao">SUGESTAO</a></li>
+                    <li><a onclick="openAndClose()" href="#localizacao">LOCALIZACAO</a></li>
+                    <li><a onclick="openAndClose()" href="#contato">CONTATO</a></li>
+                </ul>
+            </div>
+            
         </nav>
 
     </header>
@@ -92,14 +93,17 @@
             </div>
         </section>
         <section id="sugestao">
+            <h2>Sugestão</h2>
             <div class="container-sugestao">
                 <div class="texto-sugestao">
                     <h3>Preencha o formulário <br>para enviar sugestões,<br> elogios ou <br> solicitar orçamento.</h3>
                 </div>
                 <div class="formulario">
                     <form action="#">
-                        <input id="nome"type="text" name="nome" placeholder="Nome">
-                        <input id="email"type="email" name="e-mail" placeholder="E-mail">
+                        <div class="nomeSobrenome">
+                            <input id="nome"type="text" name="nome" placeholder="Nome">
+                            <input id="email"type="email" name="e-mail" placeholder="E-mail">
+                        </div>
                         <input id="assunto"type="text" name="assunto" placeholder="Assunto">
                         <textarea name="menssagem" id="" cols="20" rows="10" placeholder="Menssage" ></textarea>
                         <button id="btn-form"type="submit">Enviar</button>
@@ -115,7 +119,8 @@
         </section>
     </main>
 
-    <footer id="footer">
+    <footer id="contato">
+        <h2>Contato</h2>
         <div class="container-footer">
             <div class="redes-sociais">
                 <h3>Nos Sigas nas Redes Sociais</h3>
@@ -133,15 +138,16 @@
 
             <div class="contatos">
                 <h3>Contato</h3>
-                <div class="icon-texto1">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <p>****-****    </p>
+                <div class="all-icon">
+                    <div class="icon-texto1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <p>****-****</p>
+                    </div>
+                    <div class="icon-texto2">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>****-****</p>
+                    </div>
                 </div>
-                <div class="icon-texto2">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>****-****</p>
-                </div>
-
             </div>
         </div>
 

@@ -18,23 +18,37 @@ img{
 
 
  #header_1 {
-     font-size: 4.5rem;
-     display: flex;
-     border-bottom: solid 1px #e4e4e4;
-     margin-bottom: 1rem;
-     justify-content: space-between;
-     align-items: center;
-     margin-bottom: 6rem;
-     position: relative;
+    font-size: 4.5rem;
+    display: flex;
+    border-bottom: solid 1px #e4e4e4;
+    justify-content: space-between;
+    align-items: center;
 }
 #header_1 .ul_items{
-  display: block;
-  font-size:20px;
+    display: block;
+    font-size:20px;
 }
 .navegacao_header{
     display: flex;
     align-items:center;
+    position: fixed;
+    width:100%;
+    left: 0;
+    top: 0;
+    padding-bottom: 10px;
+    background-color: #f8edeb;
 
+}
+.navegacao_header .logo{
+    color: black;
+    font-size: min(30px, 10vw);
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    margin-left: 30px;
+}
+.navegacao_header .logo span {
+    color: gold;
 }
 /* parte do  navegacao do menu header */
 .navegacao_header .ul_items {
@@ -77,12 +91,14 @@ img{
 
 
  #iconOpenMenuheader {
+     position: absolute;
      font-size:25px;
+     right: 15px;
  }
  
 #iconCloseMenuHeader{
     position: absolute;
-    right: 20px;
+    right: 15px;
     z-index: 2;
     font-size:25px;
     display: block;
@@ -193,6 +209,11 @@ img{
     padding: 40px 0px ; 
     border-bottom:  1px solid rgba(0,0,0,.4);
 }
+#sugestao h2 {
+    padding: 10px 0px;
+    font-size: min(40px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
 
 #sugestao .container-sugestao {
     display: flex;
@@ -209,14 +230,26 @@ img{
 }
 #btn-form{
     width: 100% ;
+    padding: 5px;
+    background: transparent;
+    font-size: 13px;
 }
 #sugestao .container-sugestao .formulario form {    
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    margin-top:20px ;
+    
 }
-#sugestao .container-sugestao .formulario form ,input ,
+#sugestao .container-sugestao .formulario .nomeSobrenome{
+    display: flex;
+    gap: 10px;
+}
+#sugestao .container-sugestao .formulario form , input {
+    padding: 5px 0;
+}
+#sugestao .container-sugestao .formulario form ,
  textarea {
-    width: 100%;
     resize: none;
 }
 #nome {
@@ -229,6 +262,7 @@ img{
     padding: 5px 0px;
     font-size: min(15px, 8vw);
 }
+
 #localizacao h3 {
     padding: 10px 0px;
     font-size: min(40px, 10vw);
@@ -241,3 +275,53 @@ img{
 
 /* ------footer ----------*/
 
+
+#contato{
+    padding: 20px 0px;
+}
+#contato h2 {
+    padding-bottom: 10px;
+    padding: 10px 0px;
+    font-size: min(40px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#contato .container-footer{
+    background-color: #f8edeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#contato .container-footer .redes-sociais {
+    text-align: center;
+    padding: 20px 0;
+    font-size: min(14px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#contato.container-footer .redes-sociais .fa-brands {
+    font-size: 20px;
+    padding: 10px;
+
+}
+#contato .container-footer .redes-sociais .fa-brands:hover {
+    color: gold
+}
+#contato .container-footer .horarios {
+    text-align: center;
+    padding: 20px 0;
+    font-size: min(14px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#contato .container-footer .contatos {
+    text-align: center;
+    padding: 20px 0;
+    font-size: min(14px, 10vw);
+    font-family: 'Poppins', sans-serif;
+}
+#contato .container-footer .contatos .all-icon {
+    display: flex;
+    padding: 10px;
+}
+#contato .container-footer .contatos .all-icon .icon-texto1  {
+    margin-right: 20px;
+}
